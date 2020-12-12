@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 
 class SearchBar extends React.Component {
@@ -6,7 +5,7 @@ class SearchBar extends React.Component {
 
     onFormSubmit = (event) => {
         event.preventDefault();
-        // this.props.onSubmit(this.state.searchbox);
+        this.props.onFormSubmit(this.state.searchbox);
     }
 
     render() {
